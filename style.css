@@ -1,0 +1,141 @@
+/*GLOBAL RESET*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #141414;
+  color: white;
+}
+
+.row > * {
+  flex-shrink: unset;
+  width: auto;
+  max-width: 100%;
+  margin: 0 3px;
+}
+
+/* NAVBAR */
+
+.netflixImg img {
+  width: 70px;
+}
+
+.nav-link,
+.nav-link.active.nav-link.active {
+  color: white;
+}
+
+.nav-link:hover,
+.nav-link.active.nav-link.active:hover {
+  color: rgb(231, 53, 53);
+}
+
+.nav-link.active {
+  font-weight: bold;
+}
+
+.dropdown,
+li {
+  list-style-type: none;
+}
+
+/* per sistemare la posizione del dropdown del profilo*/
+.dropdown-menu[data-bs-popper] {
+  right: 0;
+  left: unset;
+}
+
+ul,
+ol {
+  margin-bottom: 0;
+}
+
+/* ICONE NAVBAR*/
+.bi-search,
+.bi-bell-fill,
+li {
+  color: white;
+}
+
+#generi {
+  border: 1px solid white;
+  background-color: black;
+  border-radius: 0%;
+}
+
+/*Effetto sulle foto in hover*/
+.movie-card {
+  transition: 0.3s;
+}
+
+.movie-card:hover {
+  transform: scale(1.2);
+  z-index: 2;
+}
+
+/*Footer*/
+
+footer {
+  width: 55%;
+  margin: auto;
+  padding-block: 20px;
+}
+
+.footerIcons ion-icon {
+  color: rgb(161, 161, 161);
+  font-size: 26px;
+}
+
+.footerIcons ion-icon:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.footerLinks {
+  width: 100%;
+}
+
+.footerLinks a {
+  text-decoration: none;
+  color: rgb(161, 161, 161);
+  font-size: 14px;
+}
+
+.footerLinks a:hover {
+  color: white;
+}
+
+.linkCol {
+  margin-inline: 0 auto;
+}
+
+.serviceCode {
+  color: rgb(161, 161, 161);
+  border: 2px solid rgb(161, 161, 161);
+  padding: 5px;
+}
+
+.serviceCode:hover {
+  color: white;
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+.tradeMark {
+  color: rgb(161, 161, 161);
+  font-size: 14px;
+}
+
+/*Sezione per animazione EXTRA*/
+
+.section-animate {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.section-animate.appear {
+  opacity: 1;
+}
